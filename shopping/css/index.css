@@ -1,0 +1,270 @@
+/* ctrl+f查找 */
+.main {
+    width: 980px;
+    margin-top: 10px;
+    /* height: 455px; */
+    /* 清除浮动,因为子盒子浮动，父盒子不给高度则会影响下面的标准流 */
+    overflow: hidden;
+    margin-left: 220px;
+}
+
+.focus {
+    float: left;
+    width: 719px;
+    height: 455px;
+    background-color: red;
+}
+
+.newflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+
+.news {
+    height: 120px;
+    border: 1px solid #e4e4e4;
+}
+
+.news_hd {
+    height: 33px;
+    line-height: 33px;
+    font-size: 14px;
+    /* 点线dotted */
+    border-bottom: 1px dotted #e4e4e4;
+    padding: 0 15px;
+}
+
+.news_hd h5 {
+    float: left;
+}
+
+.news_hd .more {
+    float: right;
+}
+
+.news_hd .more::after {
+    content: '\e920';
+    font-family: 'icomoon';
+}
+
+.new_d {
+    padding: 0 15px;
+}
+
+.new_d ur li {
+    height: 22px;
+    line-height: 23px;
+
+}
+
+.lifeservice {
+    /* 因为ul 中的li 太多超出了父盒子，所以切掉了超出部分 */
+    overflow: hidden;
+    margin-top: 5px;
+    height: 209px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+}
+
+.lifeservice ul {
+    /* 为了能装下所有li ,所以修改了ul的宽度*/
+    width: 252px;
+}
+
+.lifeservice ul li {
+    float: left;
+    width: 63px;
+    height: 71px;
+    text-align: center;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.lifeservice ul li i {
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+    background: url(../images/icons.png)no-repeat -19px -15px;
+}
+
+.lifeservice ul li .i1 {
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+    background: url(../images/icons.png)no-repeat -80px -15px;
+}
+
+.lifeservice ul li .i2 {
+    background: url(../images/icons.png)no-repeat -141px -15px;
+}
+
+.lifeservice ul li .i3 {
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+    background: url(../images/icons.png)no-repeat -206px -15px;
+}
+
+.lifeservice ul li .i4 {
+    background: url(../images/icons.png)no-repeat -17px -88px;
+}
+
+.lifeservice ul li .i5 {
+    background: url(../images/icons.png)no-repeat -78px -88px;
+}
+
+.lifeservice ul li .i6 {
+    background: url(../images/icons.png)no-repeat -139px -88px;
+}
+
+.lifeservice ul li .i7 {
+    background: url(../images/icons.png)no-repeat -205px -88px;
+}
+
+.lifeservice ul li .i8 {
+    background: url(../images/icons.png)no-repeat -17px -161px;
+}
+
+.lifeservice ul li .i9 {
+    background: url(../images/icons.png)no-repeat -78px -158px;
+}
+
+.lifeservice ul li .i10 {
+    background: url(../images/icons.png)no-repeat -139px -158px;
+}
+
+.lifeservice ul li .i11 {
+    background: url(../images/icons.png)no-repeat -205px -158px;
+}
+
+.bargain {
+    margin-top: 5px;
+}
+
+/* 推荐模块 */
+.recom {
+    height: 163px;
+    background-color: #ebebeb;
+    margin-top: 12px;
+}
+
+.recom_hd {
+    float: left;
+    height: 163px;
+    width: 205px;
+    background-color: #5c5251;
+}
+
+.recom_bd {
+    float: left;
+}
+
+.recom_bd ul li {
+    position: relative;
+    float: left;
+}
+
+/* 把图片的宽高定好，以免在上传时出现差错 */
+.recom_bd ul li img {
+    width: 248px;
+    height: 163px;
+}
+
+.selfy {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 275px;
+}
+
+.selfy img {
+    width: 1200px;
+    height: 275px;
+}
+
+/* 家用电器模块 */
+.box_hd {
+    overflow: hidden;
+    border-bottom: 2px solid #c81623;
+}
+
+.box_hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: 400;
+}
+
+.tab-list {
+    float: right;
+}
+
+.tab-list ul li {
+    float: right;
+    text-align: center;
+}
+
+.tab-list ul li a {
+    margin: 0 15px;
+}
+
+.floor .w {
+    margin-top: 30px;
+}
+
+.box_bd {
+    height: 361px;
+}
+
+/* 给tab_list_item里的最亲一级的div加浮动”>div */
+.tab_list_item>div {
+    float: left;
+}
+
+.col_210 {
+    width: 210px;
+    height: 361px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    /* 水平居中 */
+    text-align: center;
+    /* 垂直居中 */
+    line-height: 33px;
+    margin-right: 10px;
+}
+
+.col_210 ul {
+    padding-left: 12px;
+}
+
+.col_329 {
+    height: 361px;
+    width: 329px;
+}
+
+.col_221 {
+    height: 361px;
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+
+.col_219 {
+    height: 361px;
+    width: 219px;
+}
+
+.bb {
+    /* 一般情况下,a如果包含优宽度的盒子，a需要转为(块级元素) */
+    display: block;
+    border-bottom: 1px solid #ccc;
+}

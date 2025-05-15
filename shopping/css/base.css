@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* css3盒子模型 */
+    box-sizing: border-box;
+}
+
+/* em和i斜体的文字不倾斜 */
+em,
+i {
+    font-style: normal;
+}
+
+li {
+    /* 去掉小圆点 */
+    list-style: none;
+}
+
+img {
+    border: 0;
+    /* 取消图片底侧有空白间隙的问题 */
+    vertical-align: middle;
+}
+
+button {
+    /* 当鼠标经过button时，鼠标变成小手 */
+    cursor: pointer;
+}
+
+a {
+    color: #666;
+    /* 去掉下划线 */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c81623;
+}
+
+button,
+input {
+    font-family: Microsoft YaHei, Heiti sc, tahoma;
+    /* 默认有灰色边框需要手动去掉 */
+    border: 0;
+    /* 在输入时会弹出边框，需要去除 */
+    outline: none;
+}
+
+body {
+    /* 抗锯齿性 */
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei, Heiti sc;
+    color: #666;
+}
+
+.hide,
+.none {
+    display: none;
+}
+
+/* 清除浮动 */
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;
+}
+
+.clearfix {
+    zoom: 1;
+}
